@@ -4,6 +4,7 @@
 <%#  Part 2: Start here... %>
 
 <%= form_tag movies_path, :method => :get, :id => "ratings_form" do %>
+<%= hidden_field_tag :which_to_click, session[:which_to_click]%>
   Include:
   <% @all_ratings.each do |rating| %>
     <%= rating %>
@@ -20,7 +21,7 @@
       <% else %>
         <th>
       <% end %>
-        <a><%= link_to "Movie Title", movies_path(:which_to_click => "movie_title"), :id => "title_header" %></a>
+        <a><%= link_to "Movie Title", movies_path(:which_to_click => "movie_title", :ratings => session[:which_to_check]), :id => "title_header" %></a>
       </th>
       <th>Rating</th>
       <% if @which_to_click == "release_date" %>
@@ -28,7 +29,7 @@
       <% else %>
         <th>
       <% end %>
-        <a><%= link_to "Release Date", movies_path(:which_to_click => "release_date"), :id => "title_header" %></a>
+        <a><%= link_to "Release Date", movies_path(:which_to_click => "release_date", :ratings => session[:which_to_check]), :id => "title_header" %></a>
       </th>
       <th>More Info</th>
     </tr>

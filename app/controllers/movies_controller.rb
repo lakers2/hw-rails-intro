@@ -7,19 +7,26 @@ class MoviesController < ApplicationController
     end
   
     def index
-      #part 2
+
       @all_ratings = Movie.all_ratings
       @which_to_check = params[:ratings]
-      p params[:ratings]
-      if @which_to_check == nil
-        @which_to_check = Hash[@all_ratings.map {|rating| [rating,1]}]
-      end
-      p @which_to_check
-      
-      
-      # part 1 
-      @movies = Movie.with_ratings(@which_to_check.keys)
       @which_to_click = params[:which_to_click]
+      
+      #first time to come in
+      if @which_to_check == nil && @which_to_click == nil
+        @which_to_check = Hash[@all_ratings.map {|rating| [rating,1]}]
+      elsif @which_to_check == nil
+      # uncheck all the checkboxes
+        @which_to_check = session[:which_to_check]
+      end
+
+      p @which_to_check
+      session[:which_to_check] = @which_to_check
+      session[:which_to_click] = @which_to_click
+      
+      
+      @movies = Movie.with_ratings(@which_to_check.keys)
+      
       if @which_to_click == "movie_title"
         @movies = @movies.order(:title)
       end
@@ -36,7 +43,7 @@ class MoviesController < ApplicationController
     def create
       @movie = Movie.create!(movie_params)
       flash[:notice] = "#{@movie.title} was successfully created."
-      redirect_to movies_path
+      redirect_to movies_path(:which_to_click => session[:which_to_click], :ratings => session[:which_to_check])
     end
   
     def edit
@@ -54,7 +61,7 @@ class MoviesController < ApplicationController
       @movie = Movie.find(params[:id])
       @movie.destroy
       flash[:notice] = "Movie '#{@movie.title}' deleted."
-      redirect_to movies_path
+      redirect_to movies_path(:which_to_click => session[:which_to_click], :ratings => session[:which_to_check])
     end
   
     private
