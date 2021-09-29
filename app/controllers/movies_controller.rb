@@ -7,10 +7,19 @@ class MoviesController < ApplicationController
     end
   
     def index
-      @movies = Movie.all
-      p @movies
-      @which_to_click = params[:which_to_click]
+      #part 2
+      @all_ratings = Movie.all_ratings
+      @which_to_check = params[:ratings]
+      p params[:ratings]
+      if @which_to_check == nil
+        @which_to_check = Hash[@all_ratings.map {|rating| [rating,1]}]
+      end
+      p @which_to_check
       
+      
+      # part 1 
+      @movies = Movie.with_ratings(@which_to_check.keys)
+      @which_to_click = params[:which_to_click]
       if @which_to_click == "movie_title"
         @movies = @movies.order(:title)
       end
