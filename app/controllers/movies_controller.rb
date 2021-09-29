@@ -8,6 +8,16 @@ class MoviesController < ApplicationController
   
     def index
       @movies = Movie.all
+      p @movies
+      @which_to_click = params[:which_to_click]
+      
+      if @which_to_click == "movie_title"
+        @movies = @movies.order(:title)
+      end
+      
+      if @which_to_click == "release_date"
+        @movies = @movies.order(:release_date)
+      end
     end
   
     def new
