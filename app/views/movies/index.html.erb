@@ -6,11 +6,19 @@
 <table class="table table-striped col-md-12" id="movies">
   <thead>
     <tr>
-      <th>
+      <% if @which_to_click == "movie_title" %>
+        <th class="hilite bg-warning"> 
+      <% else %>
+        <th>
+      <% end %>
         <a><%= link_to "Movie Title", movies_path(:which_to_click => "movie_title"), :id => "title_header" %></a>
       </th>
       <th>Rating</th>
-      <th>
+      <% if @which_to_click == "release_date" %>
+        <th class="hilite bg-warning"> 
+      <% else %>
+        <th>
+      <% end %>
         <a><%= link_to "Release Date", movies_path(:which_to_click => "release_date"), :id => "title_header" %></a>
       </th>
       <th>More Info</th>

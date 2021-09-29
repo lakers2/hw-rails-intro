@@ -164,3 +164,406 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.erb within layouts/application (2.9ms)
   Rendered layouts/_flash.erb (0.0ms)
 Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 18:59:16 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected ':', expecting then or ';' or '\n'
+...ich_to_click == "movie_title" :class => "bg-warning" end);@o...
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected end, expecting ')'
+...tle" :class => "bg-warning" end);@output_buffer.safe_append=...
+...                            ^~~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:41: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  app/views/movies/index.html.erb:9: syntax error, unexpected ':', expecting then or ';' or '\n'
+  app/views/movies/index.html.erb:9: syntax error, unexpected end, expecting ')'
+  app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting ')'
+  app/views/movies/index.html.erb:41: syntax error, unexpected end, expecting ')'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 18:59:47 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected ':', expecting then or ';' or '\n'
+...ich_to_click == "movie_title" :class => "bg-warning");@outpu...
+...                              ^):
+  app/views/movies/index.html.erb:9: syntax error, unexpected ':', expecting then or ';' or '\n'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:01:14 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected ':', expecting then or ';' or '\n'
+...ich_to_click == "movie_title" :class => "bg-warning";@output...
+...                              ^):
+  app/views/movies/index.html.erb:9: syntax error, unexpected ':', expecting then or ';' or '\n'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:04:53 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+...h_to_click == "movie_title" ? <th class="bg-warning">: <th> 
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected ':'
+...tle" ? <th class="bg-warning">: <th> 
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:20: syntax error, unexpected do (for block), expecting end
+'.freeze;     @movies.each do |movie| 
+                           ^~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+  app/views/movies/index.html.erb:9: syntax error, unexpected ':'
+  app/views/movies/index.html.erb:20: syntax error, unexpected do (for block), expecting end
+  app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting end-of-input
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:06:36 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+..._to_click == "movie_title") ? <th class="bg-warning"> : <th> 
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected ':'
+...e") ? <th class="bg-warning"> : <th> 
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:20: syntax error, unexpected do (for block), expecting end
+'.freeze;     @movies.each do |movie| 
+                           ^~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+  app/views/movies/index.html.erb:9: syntax error, unexpected ':'
+  app/views/movies/index.html.erb:20: syntax error, unexpected do (for block), expecting end
+  app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting end-of-input
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.6ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:07:58 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (24.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+..._to_click == "movie_title") ? <th class="bg-warning"></th> :...
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+...le") ? <th class="bg-warning"></th> : <th></th> 
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: unknown regexp options - th
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:20: syntax error, unexpected do (for block), expecting end
+'.freeze;     @movies.each do |movie| 
+                           ^~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+  app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+  app/views/movies/index.html.erb:9: unknown regexp options - th
+  app/views/movies/index.html.erb:20: syntax error, unexpected do (for block), expecting end
+  app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting end-of-input
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:08:33 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+..._to_click == "movie_title") ? <th class="bg-warning"> : <th>...
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected ':'
+...e") ? <th class="bg-warning"> : <th> );@output_buffer.safe_a...
+...                              ^
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:41: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  app/views/movies/index.html.erb:9: syntax error, unexpected '<'
+  app/views/movies/index.html.erb:9: syntax error, unexpected ':'
+  app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting ')'
+  app/views/movies/index.html.erb:41: syntax error, unexpected end, expecting ')'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:09:54 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected class, expecting do or '{' or '('
+...lick == "movie_title" <th class="bg-warning"> else <th> );@o...
+...                          ^~~~~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:9: syntax error, unexpected else
+...e" <th class="bg-warning"> else <th> );@output_buffer.safe_a...
+...                           ^~~~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/rails/app/views/movies/index.html.erb:41: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  app/views/movies/index.html.erb:9: syntax error, unexpected class, expecting do or '{' or '('
+  app/views/movies/index.html.erb:9: syntax error, unexpected else
+  app/views/movies/index.html.erb:39: syntax error, unexpected ensure, expecting ')'
+  app/views/movies/index.html.erb:41: syntax error, unexpected end, expecting ')'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:10:40 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:10:45 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:11:15 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:11:18 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:11:19 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 24.32.135.171 at 2021-09-29 19:11:21 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 24.32.135.171 at 2021-09-29 19:13:14 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-dfe494749c5cc5370925074355a35a426d9733eee56f2143fde3ea0c4d9d550b.css?body=1" for 24.32.135.171 at 2021-09-29 19:13:14 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:13:15 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:13:16 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:13:35 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b837fd8e153f5bd65618a7711e5c17ca4e99628e1f4f8babd73f203c16cb9e7c.css?body=1" for 24.32.135.171 at 2021-09-29 19:13:35 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:13:36 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:13:37 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:13:52 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=movie_title" for 24.32.135.171 at 2021-09-29 19:13:55 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"movie_title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?which_to_click=release_date" for 24.32.135.171 at 2021-09-29 19:13:56 +0000
+Cannot render console from 24.32.135.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"which_to_click"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 16.5ms | ActiveRecord: 0.4ms)
